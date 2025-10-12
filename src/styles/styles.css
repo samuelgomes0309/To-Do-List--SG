@@ -1,0 +1,156 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	color: azure;
+	min-width: 100%;
+	min-height: 100dvh;
+	display: flex;
+	padding: 5rem;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 4rem;
+	background-color: #0d0714;
+}
+
+.header-container {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+	margin-bottom: 4rem;
+	max-width: 25rem;
+}
+
+.header-container input {
+	border: 1px solid #3e1671;
+	background-color: transparent;
+	border-radius: 0.3rem;
+	flex: 1;
+	color: #f4f4f4;
+	padding: 0.5rem 1rem;
+}
+
+.header-container input:focus {
+	outline: solid 1px #7312f1;
+}
+
+.header-container button {
+	border: 0;
+	outline: none;
+	background-color: #9e78cf;
+	width: 3rem;
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.3rem;
+	height: 3rem;
+	transition: transform ease-in-out 0.5s;
+}
+
+.header-container button i {
+	font-size: 1.8rem;
+	color: #ffffffa4;
+}
+
+.main-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	max-width: 25rem;
+}
+
+.tasks-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.tasks-container h1 {
+	font-size: 1.3rem;
+	color: #b3b3b3;
+}
+
+.tasks-done-container {
+	width: 100%;
+}
+
+.task-item-container {
+	width: 100%;
+	height: 100%;
+	min-height: 5rem;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	background-color: #15101c;
+	padding: 1.2rem;
+	gap: 1rem;
+	border-radius: 0.4rem;
+}
+
+.task-item-container p {
+	color: #9e78cf;
+	flex: 1;
+	display: -webkit-box;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	width: 70%;
+	padding: 0.2rem;
+	word-wrap: break-word;
+	line-height: 1.4rem;
+	max-height: calc(1.4rem * 3);
+}
+
+.btn-container {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+}
+
+.btn-container button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0;
+	cursor: pointer;
+	transition: transform ease-in-out 0.5s;
+	background-color: transparent;
+}
+
+.btn-container button i {
+	color: #9e78cf;
+	font-size: 1.2rem;
+}
+
+.btn-container button:hover,
+.header-container button:hover {
+	transform: scale(1.1);
+}
+
+.tasks-done-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.tasks-done-container h1 {
+	font-size: 1rem;
+	color: #b3b3b3;
+}
+
+#item-done {
+	text-decoration: line-through;
+	color: #78cfb0;
+	opacity: 0.7;
+}
